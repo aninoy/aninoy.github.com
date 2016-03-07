@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name aninoygithubcomApp.controller:MainCtrl
+ * @name aninoygithubcomApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the aninoygithubcomApp
  */
 angular.module('aninoygithubcomApp')
-  .controller('MainCtrl', function () {
+  .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

@@ -1,11 +1,33 @@
 'use strict';
 
-angular.module('aninoy.github.comApp', [])
+/**
+ * @ngdoc overview
+ * @name aninoygithubcomApp
+ * @description
+ * # aninoygithubcomApp
+ *
+ * Main module of the application.
+ */
+angular
+  .module('aninoygithubcomApp', [
+    'ngAnimate',
+    'ngCookies',
+    'ngResource',
+    'ngRoute',
+    'ngSanitize',
+    'ngTouch'
+  ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl',
+        controllerAs: 'about'
       })
       .otherwise({
         redirectTo: '/'

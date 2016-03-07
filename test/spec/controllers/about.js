@@ -1,20 +1,20 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: AboutCtrl', function () {
 
   // load the controller's module
   beforeEach(module('aninoygithubcomApp'));
 
-  var MainCtrl;
+  var AboutCtrl;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
-    MainCtrl = $controller('MainCtrl', {
+    AboutCtrl = $controller('AboutCtrl', {
       // place here mocked dependencies
     });
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
+    expect(AboutCtrl.awesomeThings.length).toBe(3);
   });
 });
