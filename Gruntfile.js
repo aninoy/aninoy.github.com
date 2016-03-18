@@ -1,4 +1,4 @@
-// Generated on 2016-03-07 using generator-angular 0.12.0
+// Generated on 2016-03-17 using generator-angular 0.12.0
 'use strict';
 
 // # Globbing
@@ -14,7 +14,9 @@ module.exports = function (grunt) {
 
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt, {
-    useminPrepare: 'grunt-usemin'
+    useminPrepare: 'grunt-usemin',
+    ngtemplates: 'grunt-angular-templates',
+    cdnify: 'grunt-google-cdn'
   });
 
   // Configurable paths for the application
@@ -68,10 +70,10 @@ module.exports = function (grunt) {
     // The actual grunt server settings
     connect: {
       options: {
-        port: 9000,
+        port: 9001,
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: 'localhost',
-        livereload: 35729
+        livereload: 35730
       },
       livereload: {
         options: {
@@ -360,7 +362,8 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'CNAME'
           ]
         }, {
           expand: true,
