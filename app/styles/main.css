@@ -19,7 +19,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 }
 /* Make the masthead heading the same height as the navigation */
@@ -35,6 +34,9 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .container-narrow > hr {
@@ -57,6 +59,16 @@ body {
 }
 .marketing p + h4 {
   margin-top: 28px;
+}
+
+.lead > img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.navbar-collapse {
+  /*background-color: #4276b6;*/
+  color: #FFF;
 }
 
 /* Responsive: Portrait tablets and up */
