@@ -7,6 +7,7 @@
 
 body {
   padding: 0;
+
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -69,6 +70,10 @@ body {
 .navbar-collapse {
   /*background-color: #4276b6;*/
   color: #FFF;
+}
+
+.content-block {
+  color: #666;
 }
 
 /* Responsive: Portrait tablets and up */
